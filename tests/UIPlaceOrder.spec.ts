@@ -2,6 +2,7 @@ import { test, expect, type Page } from '@playwright/test';
 import { deleteUser, FillCardDetails, getUser, registerNew, signUp, USER, signUpFromHome } from './helpers/RegisterUser';
 import { error } from 'node:console';
 
+// Add item to cart, proceed to purchase step
 async function addItemGotoCart(page: Page): Promise<void> {
   const item = page.locator('.product-image-wrapper').filter({
     has: page.getByText('Premium Polo T-Shirts'),
@@ -61,7 +62,7 @@ async function Checkout(page: Page) {
   await checkoutBtn.click();
 }
 
-
+// Item in cart, make purchase
 async function ConfirmPostalInfo(page: Page) {
   await expect(page.locator('#address_delivery .address_firstname.address_lastname'))
     .toContainText(getUser(USER).first_name + " " + getUser(USER).last_name);
@@ -72,9 +73,13 @@ async function EnterDescription(page: Page) {
 }
 async function Purchase(page: Page) {
   await page.locator('.btn.btn-default').first().click();
-
 }
 
+// These tests create a new user with the USER set in enviroParameters 
+// If the selected user already exists it will need to be deleted or another user chosen
+// Deletion can be done with the 'Delete User' test in APICheck.spec.ts
+
+//Valid users are validUser0, validUser1, validUser2, validUser3
 
 test.describe('Automation at cart register', () => {
   test('Register while Checkout', async ({ page }) => {

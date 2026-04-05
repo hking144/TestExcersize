@@ -5,6 +5,7 @@ import { defineConfig, devices } from '@playwright/test';
  * Each spec runs once per project below.
  */
 export default defineConfig({
+  
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
@@ -13,6 +14,11 @@ export default defineConfig({
   reporter: 'html',
   use: {
     trace: 'on-first-retry',
+    baseURL: 'https://automationexercise.com',
+    extraHTTPHeaders: {
+      'Accept': 'application/json'
+    }
+  
   },
   projects: [
     {
