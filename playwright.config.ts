@@ -16,16 +16,18 @@ export default defineConfig({
   },
   projects: [
     {
-      name: 'automationexercise',
+      name: 'Prod',
       use: {
-        ...devices['Desktop Chrome'],
+        headless: false,
+        ...devices['Desktop Firefox'],
         baseURL: 'https://automationexercise.com',
       },
     },
     {
-      name: 'test-automationexercise',
+      name: 'testProd',
       use: {
-        ...devices['Desktop Chrome'],
+        headless: false,
+        ...devices['Desktop Firefox'],
         baseURL: 'https://test.automationexercise.com',
       },
     },

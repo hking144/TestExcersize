@@ -1,0 +1,48 @@
+{
+    "users": {
+        "validUser": {
+            "username": "validUser",
+            "email": "Valerievalid@example.com",
+            "password": "Valid123!",
+            "days": "15",
+            "months": "August",
+            "years": "1992",
+            "first_name": "Valerie",
+            "last_name": "Valid",
+            "address": "123 Test Street",    
+            "country": "Australia",       
+            "state": "state",
+            "city": "City",
+            "zipcode": "00",
+            "mobile_number": "00",
+
+            "card_name": "val",
+            "card_num": "1234",
+            "ccv": "123",
+            "exp": "12",
+            "year": "2028"
+        },
+        "invalidUser": {
+            "username": "invalidUser",
+            "email": "emailATbad",
+            "password": "inv",
+            "days": "15",
+            "months": "August",
+            "years": "1992",
+            "first_name": "Ivan",
+            "last_name": "Invalid",
+            "address": "123 Test Street",
+            "country": "Australia",       
+            "state": "state",
+            "city": "city",
+            "zipcode": "00",
+            "mobile_number": "00",
+
+            "card_name": "val",
+            "card_num": "1234",
+            "ccv": "123",
+            "exp": "12",
+            "year": "2028"
+        }
+    }
+}
