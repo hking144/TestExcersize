@@ -18,10 +18,10 @@ cd TestExcersize
 
 ## 3. Local Deployment
 Install the project dependencies and the necessary browser binaries:
-
+```
 Install NPM packages
 npm install
-
+```
 Install Playwright browsers (Chromium, Firefox, Webkit)
 npx playwright install
 
