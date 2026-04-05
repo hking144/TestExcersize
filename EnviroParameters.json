@@ -1,6 +1,6 @@
 {
     "users": {
-        "validUser": {
+        "validUser0": {
             "username": "validUser0",
             "email": "Valerievalid@example.com",
             "password": "Valid123!",
@@ -25,7 +25,7 @@
             "username": "validUser1",
             "email": "alex.tester1@example.com",
             "password": "Password789!",
-            "days": "01",
+            "days": "1",
             "months": "January",
             "years": "1985",
             "first_name": "Alex",
