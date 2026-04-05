@@ -25,7 +25,7 @@ export default defineConfig({
       name: 'Prod',
       use: {
         headless: false,
-        ...devices['Desktop Firefox'],
+        ...devices['Desktop Chrome'],
         baseURL: 'https://automationexercise.com',
       },
     },
@@ -33,7 +33,7 @@ export default defineConfig({
       name: 'testProd',
       use: {
         headless: false,
-        ...devices['Desktop Firefox'],
+        ...devices['Desktop Chrome'],
         baseURL: 'https://test.automationexercise.com',
       },
     },
