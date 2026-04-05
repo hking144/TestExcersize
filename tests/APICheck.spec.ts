@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { getUser } from './helpers/RegisterUser';
 
-const USER = 'validUser';
+const USER = 'validUser1';
 
 test('Get User Good Creds', async ({ request }) => {
     const response = await request.post('/api/verifyLogin', {
